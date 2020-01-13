@@ -10,7 +10,7 @@ Mon & Wed
 
 * Lecture 1	1/6	"Introduction"
 * Lecture 2     1/8	"Constructors and Operators"
-* Lecture 3  	1/13	""
+* Lecture 3  	1/13	"Vector Class from Scratch "
 * Lecture 4  	----  	""
 * Lecture 5  	----  	""
 * Lecture 6  	----  	""
