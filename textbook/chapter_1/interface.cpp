@@ -2,10 +2,8 @@
 
 IntCell::IntCell(int InitialValue)
         : StoredValue {InitialValue}
-{
-
-}
-
+{}
+        
 int IntCell::IntRead() const
 {
         return StoredValue;
