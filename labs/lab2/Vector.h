@@ -1,5 +1,14 @@
 // Colin Morris-Moncada
 // Lab 2
+/* 
+
+Trying to catch up with syntax and such since I did not learn
+alot of the syntax used in the book and the labs
+
+Taking Notes for chapter 1 in the textbook and trying to 
+understand Lab 2 but I will not finish by 12:00 
+*/
+
 #ifndef VECTOR_H
 #define VECTOR_H
 
@@ -16,14 +25,14 @@ template <typename T>
 class Vector
 {
 public:
-	// Explicit 
+	// Explicit Vector Default Constructor
 	explicit Vector(int initSize = 0)
 		: theSize {initSize},
 		theCapacity{initSize + SPARE_CAPACITY}
 	{ data = new T[theCapacity]; }
 
-	
-	// Vector Default Constructor
+
+	// Vector Constructor
 	Vector(const Vector& rhs)
 		: theSize { rhs.theSize },
 		theCapacity { rhs.theCapacity },
@@ -46,9 +55,6 @@ private:
 	int theCapacity;
 	T* data;
 };
-
-
-
 
 
 #endif
