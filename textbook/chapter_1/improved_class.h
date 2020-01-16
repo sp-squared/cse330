@@ -5,14 +5,16 @@ using namespace std;
 class IntCell
 {
 public:
-	IntCell()
-		{StoredValue = 0;}
-	IntCell(int InitialValue)
-		{StoredValue = InitialValue;}
-	int IntRead()
-		{return StoredValue;}
+	// Example of the explicit constructor
+	// and default parameter
+	explicit IntCell(int InitialValue = 0)
+		: StoredValue{ InitialValue }{}
+	// Example of Const  Accsessor
+	// Member Function
+	int IntRead() const
+	{ return StoredValue; }
 	void IntWrite(int x)
-		{StoredValue = x;}
+	{ StoredValue = x; }
 private:
 	int StoredValue;
 };
