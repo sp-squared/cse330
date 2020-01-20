@@ -2,11 +2,21 @@
 Data Structures in C++
 
 ```
-CSE 330
+CSE 330 at California State University, San Bernardino
 Winter 2020
 Voight, K
 Mon & Wed
 12:00 - 1:15
+```
+
+```
+CSE 330. Data Structures
+
+Prerequisites: CSE 202 with grade of C or better and MATH 272 or MATH 372
+
+Abstract data structures including lists, stacks, queues and trees; 
+their storage allocation and associated application algorithms. 
+
 ```
 
 * Lecture 1	1/6	"Introduction"
