@@ -1,12 +1,13 @@
 # cse330
 Data Structures in C++
 
-
+```
 CSE 330
 Winter 2020
 Voight, K
 Mon & Wed
 12:00 - 1:15
+```
 
 * Lecture 1	1/6	"Introduction"
 * Lecture 2     1/8	"Constructors and Operators"
