@@ -1,1 +1,6 @@
+// Move Operator
 https://en.cppreference.com/w/cpp/utility/move
+
+// Iterators
+https://www.geeksforgeeks.org/introduction-iterators-c/
+https://www.geeksforgeeks.org/iterators-c-stl/
