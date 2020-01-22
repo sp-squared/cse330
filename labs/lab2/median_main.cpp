@@ -45,7 +45,7 @@ void print_vector(vector<int> vec)
 
 int main()
 {
-	rand_seed();
+	//rand_seed();
 
 	int how_many;
 	cout << "How many? (odd) ";
@@ -56,7 +56,7 @@ int main()
 		how_many++;
 
 	vector<int> mynums;
-	
+
 	/*
 	int next;
 	for (int i = 1; i <= how_many; i++)
@@ -68,7 +68,7 @@ int main()
 	}
 	*/
 	// how_many many random numbers 1..100 with up to 50% neg values
-	random_vector_norep(how_many, 1, 100, mynums,5);
+	//random_vector_norep(how_many, 1, 100, mynums,5);
 
 	vector<int> cpmynums(mynums);
 
