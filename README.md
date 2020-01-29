@@ -30,12 +30,13 @@ WEEK TWO
 * Lecture 4  	1/15  	"Vector Methods / Functions       "
 
 WEEK THREE
+
 * Lecture null  1/20    "MLK Day                          "
 * Lecture 5  	1/22  	"Vector Iterators and Linked Lists"
 
 WEEK FOUR
 
-* Lecture 6  	1/27  	"                                 "
+* Lecture 6  	1/27  	"Iterators and List Iterators     "
 * Lecture 7  	1/29 	"                                 "
 
 WEEK FIVE
