@@ -37,7 +37,7 @@ WEEK THREE
 WEEK FOUR
 
 * Lecture 6  	1/27  	"Iterators and List Iterators     "
-* Lecture 7  	1/29 	"                                 "
+* Lecture 7  	1/29 	"Linked Lists and Iterators       "
 
 WEEK FIVE
 
