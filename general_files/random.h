@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <vector>
 #include <ctime>
-#include "Vector.h"
+#include "vector.h"
 
 using namespace std;
 

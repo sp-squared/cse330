@@ -3,6 +3,7 @@
 #define LIST_H
 
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 template <typename T>
@@ -289,8 +290,28 @@ class List
         return to;
     }
 
-	// Add for CSE 330...
 
+	// Attempt at creating a function to print list so we 
+	// dont have to in main
+	void print()
+	{	
+		List <int> :: iterator itr;
+		itr = begin();
+		
+		
+		for (itr; itr != tail ; ++itr)
+		{
+			cout << "[" << *itr << "]";
+	
+		}
+
+	}
+	
+	
+
+
+	//find (T x)
+	//{}
 	
   private:
     int   theSize;

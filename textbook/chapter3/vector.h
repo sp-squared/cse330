@@ -19,6 +19,14 @@ public:
 		theCapacity{ initSize + SPARE_CAPACITY }
 	{ data = new T[ theCapacity ]; }
 
+	Vector (int initSize, T value)
+	{
+		theSize = initSize;
+		for (int i = 1; i <=initSize; i++)
+		{
+			data.push_back(value);
+		}
+	}
 
 	// Copy Constructor
 	Vector(const Vector & rhs)
@@ -30,6 +38,7 @@ public:
 		for (int k = 0; k < theSize; ++k)
 			data[k] = rhs.data[k];
 	}
+
 
 	// Copy Assignment
 	Vector & operator= (const Vector & rhs)
@@ -193,14 +202,10 @@ public:
 		}
 	}
 
-
-
-
-
 	// Iterators
 
-	typedef T * iterator;
-	typedef const T * const_iterator;
+	typedef T *iterator;
+	typedef const T *const_iterator;
 
 	iterator begin()
 	{

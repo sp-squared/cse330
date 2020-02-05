@@ -1,17 +1,9 @@
-// Adopted from M.A. Weiss, DSAAC++ textbook
-// by KV, Jan 2020
-
-//#pragma once
 #ifndef VECTOR_H
 #define VECTOR_H
 
-//#include <algorithm>  // for swap???
-#include <cstdlib>  // KV trying ... 
+#include <cstdlib>
 #include <iostream>
-#include <cassert>   // KV prefers assert ... 
-
-//#include <stdexcept>     
-//#include "dsexceptions.h"
+#include <cassert>
 
 template <typename T>
 class Vector
@@ -29,6 +21,7 @@ public:
 			data[i] = initValue;
 
 	}
+
 	Vector(const Vector& rhs)
 		: theSize{ rhs.theSize }, theCapacity{ rhs.theCapacity }, data{ nullptr }
 	{
@@ -81,24 +74,12 @@ public:
 
 	T& operator[](int index)
 	{
-		/*
-#ifndef NO_CHECK
-		if (index < 0 || index >= size())
-			throw ArrayIndexOutOfBoundsException{ };
-#endif
-*/
 		assert(index >= 0 && index < theSize);
 		return data[index];
 	}
 
 	const T& operator[](int index) const
 	{
-		/*
-#ifndef NO_CHECK
-		if (index < 0 || index >= size())
-			throw ArrayIndexOutOfBoundsException{ };
-#endif
-*/
 		assert(index >= 0 && index < theSize);
 		return data[index];
 	}
@@ -130,7 +111,7 @@ public:
 			reserve(2 * theCapacity + 1);
 		data[theSize++] = x;
 	}
-	
+
 	void push_back(T&& x)
 	{
 		if (theSize == theCapacity)
@@ -141,23 +122,17 @@ public:
 	void pop_back()
 	{
 		assert(theSize >= 1);
-		/*
-		if (empty())
-			throw UnderflowException{ };
-			*/
 		--theSize;
 	}
 
 	const T& back() const
 	{
-		/*if (empty())
-			throw UnderflowException{ };
-			*/
 		assert(theSize >= 1);
 		return data[theSize - 1];
 	}
 
-	// Iterators (new concept)
+
+	// Iterators
 	typedef T* iterator;
 	typedef const T* const_iterator;
 
@@ -180,6 +155,83 @@ public:
 
 	static const int SPARE_CAPACITY = 2;
 
+//**************************LAB3/HW2 start**************************************
+	void erase(int index)
+	{
+		assert(index >= 0 && index < theSize);
+		if( index == theSize - 1 )
+		{
+			pop_back();
+			return;
+		}
+
+		for (int i = index; i < theSize; i++)
+		{
+			data[i] = data [i + 1];
+		}
+		pop_back();
+		return;
+	}
+
+	void insert (int k, T x)
+	{
+		if (k < 0 || k > theSize)
+		{
+			push_back(x);
+		}else{
+			for(int i = theSize; i > k; i--)
+			{
+				data[i] = data[i - 1];
+			}
+			data[k] = x;
+			theSize++;
+		}
+	}
+
+	void erase(iterator itr)
+	{
+		assert (itr >= begin && itr <end());
+		if ( itr == &data[theSize - 1])
+			{
+				pop_back();
+				return;
+			}
+
+		iterator itr1 = itr;
+		iterator itr2 = itr + 1;
+		while (itr2 != end())
+		{
+			*itr1 = *itr2;
+			++itr1;
+			++itr2;
+		}
+		pop_back();
+		return;
+	}
+
+	void insert(iterator itr, int value)
+	{
+		if( itr == end())
+		{
+			push_back(value);
+			return;
+		}
+
+		assert (itr >= begin() && itr < end());
+		push_back(back());
+		iterator itr1 = end() - 2;
+		iterator itr2 = end() -1 ;
+		while (itr1 >= itr)
+		{
+			*itr2 = itr1;
+			itr1 --;
+			itr2 --;
+		}
+
+		*itr = value;
+		return;
+	}
+//**************************LAB3/HW2 end****************************************
 private:
 	int theSize;
 	int theCapacity;
