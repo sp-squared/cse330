@@ -23,14 +23,40 @@ int main()
 	myList.push_back(24);
 	myList.push_back(25);
 
+	myList.print();
+	cout << endl;
+	myList.find(26);
+
+
+
+
+	//  Prints all the items in the list
+	/*
+
 	for (itr = myList.begin(); itr != myList.end(); ++itr)
 	{
 		cout << "[" << *itr << "]";
-	
+
 	}
-	
-	cout << endl;
-	myList.print();
-	cout << endl;
+
+	*/
+	//cout << endl;
+
+	// Finds integer value by iterating through List
+	// If value is not found back() is given
+	/*
+
+	int value = 0;
+	for ( itr = myList.begin(); itr != myList.end() ; itr ++ )
+	{
+		if ( value == *itr )
+		{
+			cout << "[" << *itr << "]" << endl;
+		}
+
+	}
+	cout << "[" << myList.back() << "]" << endl;
+
+	*/
 return 0;
 }

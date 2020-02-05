@@ -9,7 +9,7 @@ using namespace std;
 template <typename T>
 class List
 {
-  private:    
+  private:
     // The basic doubly linked list node.
     // Nested inside of List, can be public
     // because the Node is itself private
@@ -21,7 +21,7 @@ class List
 
         Node( const T & d = T{ }, Node * p = nullptr, Node * n = nullptr )
           : data{ d }, prev{ p }, next{ n } { }
-        
+
         Node( T && d, Node * p = nullptr, Node * n = nullptr )
           : data{ std::move( d ) }, prev{ p }, next{ n } { }
     };
@@ -30,7 +30,7 @@ class List
     class const_iterator
     {
       public:
-  
+
         // Public constructor for const_iterator.
         const_iterator( ) : current{ nullptr }
           { }
@@ -40,7 +40,7 @@ class List
         // const reference return type.
         const T & operator* ( ) const
           { return retrieve( ); }
-        
+
         const_iterator & operator++ ( )
         {
             current = current->next;
@@ -66,7 +66,7 @@ class List
             --( *this );
             return old;
         }
-            
+
         bool operator== ( const const_iterator & rhs ) const
           { return current == rhs.current; }
 
@@ -86,7 +86,7 @@ class List
         // Expects a pointer that represents the current position.
         const_iterator( Node *p ) :  current{ p }
           { }
-        
+
         friend class List<T>;
     };
 
@@ -111,7 +111,7 @@ class List
         // a reference return type. The accessor is shown first.
         const T & operator* ( ) const
           { return const_iterator::operator*( ); }
-        
+
         iterator & operator++ ( )
         {
             this->current = this->current->next;
@@ -138,7 +138,7 @@ class List
             return old;
         }
 
-		
+
       protected:
         // Protected constructor for iterator.
         // Expects the current position.
@@ -173,7 +173,7 @@ class List
         return *this;
     }
 
-    
+
     List( List && rhs )
       : theSize{ rhs.theSize }, head{ rhs.head }, tail{ rhs.tail }
     {
@@ -181,16 +181,16 @@ class List
         rhs.head = nullptr;
         rhs.tail = nullptr;
     }
-   
+
     List & operator= ( List && rhs )
-    {    
+    {
         std::swap( theSize, rhs.theSize );
         std::swap( head, rhs.head );
         std::swap( tail, rhs.tail );
-        
+
         return *this;
     }
-    
+
     // Return iterator representing beginning of list.
     // Mutator version is first, then accessor version.
     iterator begin( )
@@ -220,7 +220,7 @@ class List
         while( !empty( ) )
             pop_front( );
     }
- 
+
     // front, back, push_front, push_back, pop_front, and pop_back
     // are the basic double-ended queue operations.
     T & front( )
@@ -268,7 +268,7 @@ class List
         ++theSize;
         return iterator( p->prev = p->prev->next = new Node{ std::move( x ), p->prev, p } );
     }
-    
+
     // Erase item at itr.
     iterator erase( iterator itr )
     {
@@ -291,28 +291,42 @@ class List
     }
 
 
-	// Attempt at creating a function to print list so we 
+	// Attempt at creating a function to print list so we
 	// dont have to in main
 	void print()
-	{	
-		List <int> :: iterator itr;
+	{
+		List <T> :: iterator itr;
 		itr = begin();
-		
-		
-		for (itr; itr != tail ; ++itr)
+
+		for ( itr; itr != tail ; ++itr )
 		{
 			cout << "[" << *itr << "]";
-	
+
 		}
 
 	}
-	
-	
+
+        T find ( T x )
+        {
+                List <T> :: iterator itr;
+                itr = begin();
+                for ( itr ; itr != tail; ++itr )
+                {
+                        if ( x == *itr )
+                        {
+                                 cout << "["<< *itr << "]" << endl;
+                        }
+                }
+                cout << "[" <<  back() << "]" << endl;
+        return 0;
+        }
 
 
-	//find (T x)
-	//{}
-	
+        T selforg_find(T x)
+        {
+
+        }
+
   private:
     int   theSize;
     Node *head;
