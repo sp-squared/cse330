@@ -295,9 +295,7 @@ class List
 	// dont have to in main
 	void print()
 	{
-		List <T> :: iterator itr;
-		itr = begin();
-
+		List <T> :: iterator itr = begin();
 		for ( itr; itr != tail ; ++itr )
 		{
 			cout << "[" << *itr << "]";
@@ -308,13 +306,13 @@ class List
 
         T find ( T x )
         {
-                List <T> :: iterator itr;
-                itr = begin();
+                List <T> :: iterator itr = begin();
                 for ( itr ; itr != tail; ++itr )
                 {
                         if ( x == *itr )
                         {
                                  cout << "["<< *itr << "]" << endl;
+				return 0;
                         }
                 }
                 cout << "[" <<  back() << "]" << endl;

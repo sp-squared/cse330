@@ -26,7 +26,7 @@ int main()
 	myList.print();
 	cout << endl;
 	myList.find(26);
-
+	myList.find(15);
 
 
 
