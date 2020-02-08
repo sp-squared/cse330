@@ -41,8 +41,8 @@ WEEK FOUR
 
 WEEK FIVE
 
-* Lecture 8  	2/3 	"Big O Notation and Stacks / Queues "
-* Lecture 9  	2/5 	"                                   "
+* Lecture 8  	2/3 	"Big O Notation and Stacks / Queues  "
+* Lecture 9  	2/5 	"Midterm Review and Infix vs. Postfix"
 
 WEEK SIX
 
