@@ -47,30 +47,30 @@ WEEK FIVE
 WEEK SIX
 
 * Lecture 10    2/10 	"                                   "
-* Lecture 11 	2/12 	"                                   "
+* Lecture null 	2/12 	"Midterm                            "
 
 WEEK SEVEN
 
-* Lecture 12 	2/17 	"                                   "
-* Lecture 13 	2/19 	"                                   "
+* Lecture 11 	2/17 	"                                   "
+* Lecture 12 	2/19 	"                                   "
 
 WEEK EIGHT
 
-* Lecture 14    2/24 	"                                   "
-* Lecture 15 	2/26 	"                                   "
+* Lecture 13    2/24 	"                                   "
+* Lecture 14 	2/26 	"                                   "
 
 WEEK NINE
 
-* Lecture 16 	3/2	"                                   "
-* Lecture 17 	3/4 	"                                   "
+* Lecture 15 	3/2	"                                   "
+* Lecture 16 	3/4 	"                                   "
 
 WEEK TEN
 
-* Lecture 18 	3/9	"                                   "
-* Lecture 19 	3/11	"                                   "
+* Lecture 17 	3/9	"                                   "
+* Lecture 18 	3/11	"                                   "
 
 WEEK ELEVEN
 
-* Lecture 20 	3/16	"                                   "
+* Lecture 19 	3/16	"                                   "
 * Class 21      3/18    "Final  or last class session       "
 * Class 22      3/20    "---------------------------------  "
