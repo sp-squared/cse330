@@ -46,8 +46,8 @@ WEEK FIVE
 
 WEEK SIX
 
-* Lecture 10    2/10 	"                                   "
-* Lecture null 	2/12 	"Midterm                            "
+* Lecture 10    2/10 	"Midterm Questions and More Infix to Postfix"
+* Lecture null 	2/12 	"Midterm                                    "
 
 WEEK SEVEN
 

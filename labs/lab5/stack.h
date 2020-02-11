@@ -1,8 +1,8 @@
 #ifndef STACK_H_
 #define STACK_H_
 
-#include "Vector.h"
-using namespace std;
+#include "vector.h"
+//using namespace std;
 
 template <typename C>
 class Stack
@@ -33,7 +33,7 @@ public:
 		the_stack.pop_back();
 	}
 
-	value_type top() 
+	value_type top()
 	{
 		return the_stack.back();
 	}
