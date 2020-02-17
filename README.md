@@ -51,7 +51,7 @@ WEEK SIX
 
 WEEK SEVEN
 
-* Lecture 11 	2/17 	"                                   "
+* Lecture 11 	2/17 	"Binary Search Trees                 "
 * Lecture 12 	2/19 	"                                   "
 
 WEEK EIGHT
