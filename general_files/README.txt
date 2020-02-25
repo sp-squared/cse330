@@ -6,3 +6,5 @@ random_vec.cpp -> random main file for vector
 
 list.h -> list header file
 list.cpp -> list main file
+
+big o cheat sheet -> Big Oh Picture
