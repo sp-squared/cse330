@@ -51,12 +51,12 @@ WEEK SIX
 
 WEEK SEVEN
 
-* Lecture 11 	2/17 	"Binary Search Trees                 "
-* Lecture 12 	2/19 	"                                   "
+* Lecture 11 	2/17 	"Binary Search Trees                "
+* Lecture 12 	2/19 	"Binary Search Trees                "
 
 WEEK EIGHT
 
-* Lecture 13    2/24 	"                                   "
+* Lecture 13    2/24 	"Midterm Review                     "
 * Lecture 14 	2/26 	"                                   "
 
 WEEK NINE
