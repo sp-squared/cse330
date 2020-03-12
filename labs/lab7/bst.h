@@ -283,7 +283,7 @@ class BinarySearchTree
                 return;
         
             for(int i = 1; i <= offset; i++)
-                cout << "--";
+                cout << "@";
         
             cout << t->element << endl;
             printInternal(t->left, offset + 1);
