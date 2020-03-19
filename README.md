@@ -21,7 +21,7 @@ their storage allocation and associated application algorithms.
 
 WEEK ONE
 
-* Lecture 1	1/6	"Introduction                       "
+* Lecture 1	    1/6	"Introduction                       "
 * Lecture 2     1/8	"Constructors and Operators         "
 
 WEEK TWO
@@ -57,20 +57,20 @@ WEEK SEVEN
 WEEK EIGHT
 
 * Lecture 13    2/24 	"Midterm Review                     "
-* Lecture 14 	2/26 	"                                   "
+* Lecture 14 	2/26 	"Sets                               "
 
 WEEK NINE
 
-* Lecture 15 	3/2	"                                   "
-* Lecture 16 	3/4 	"                                   "
+* Lecture 15 	3/2  	"Sets                               "
+* Lecture 16 	3/4 	"Maps                               "
 
 WEEK TEN
 
-* Lecture 17 	3/9	"                                   "
-* Lecture 18 	3/11	"                                   "
+* Lecture 17 	3/9	    "Maps                               "
+* Lecture 18 	3/11	"Priority Queues / Heaps            "
 
 WEEK ELEVEN
 
-* Lecture 19 	3/16	"                                   "
-* Class 21      3/18    "Final  or last class session       "
-* Class 22      3/20    "---------------------------------  "
+* Lecture null	3/16	"COVID-19 Class Cancelled           "
+* Lecture null  3/18    "COVID-19 Class Cancelled           "
+* Class 22      3/20    "Final                              "
