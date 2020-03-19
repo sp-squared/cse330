@@ -73,4 +73,4 @@ WEEK ELEVEN
 
 * Lecture null	3/16	"COVID-19 Class Cancelled           "
 * Lecture null  3/18    "COVID-19 Class Cancelled           "
-* Class 22      3/20    "Final                              "
+* Lecture null  3/20    "Final                              "
