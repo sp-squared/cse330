@@ -1,0 +1,25 @@
+Here is another posting of HW2 with the greater details I had promised ...
+
+As of today, Jan 24, everybody is asked to TEST their Vector erase and insert functions with the int main() code provided in file VectorLab3HW2Main.cpp (see below).
+
+The int main() function MUST NOT BE CHANGED except for selective commenting out of code related to the testing of any of the Vector erase and insert functions that may not work at the time. 
+
+You are meant to define two variants for the erase and insert functions: one to use integer indices, the other to use a vector iterator.  You may approach this tasks in stages and comment out any code in int main() that is not related to the testing of whatever functions you are developing at the time. Only when all seem to be execute as desired, run the full int main() as given. 
+
+If in the end, with your best effort, not all of your erase and insert functions work properly, you may still show off the "good" ones by commenting out  within int main() the calls to the flawed functions. In this manner, you can still earn a good amount of partial credit. 
+
+NOTICE: the provided code use random number generation and you will need to have the Random.h and Random.cpp files is your working directory (or project). Remember that when you compile your code under Linux like in the lab, you will need to compile the .ccp files separately and then link them. Examples:
+
+g++ -c Random.cpp
+
+g++ -c VectorLab3HW2Main.cpp
+
+g++ Random.o VectorLab3HW2Main.o
+
+Then run with ./a.out
+
+Any questions you may have, please ask in the next lecture. 
+
+Best,
+
+Kerstin Voigt.
