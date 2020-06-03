@@ -8,7 +8,7 @@ template <typename Object>
 class List
 {
 private:
-        // Figure 3.13xs
+        // Figure 3.13
         struct Node
 	{
         	Object data;
